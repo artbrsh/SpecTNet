@@ -1,0 +1,13 @@
+# Adapted from TinyViT configuration files; architecture values are specific to SpecTNet.
+
+MODEL:
+  NAME: SpecTNet-2.5M-1k
+  TYPE: spectnet
+
+  DROP_PATH_RATE: 0.0
+
+  SPECTNET:
+    DEPTHS: [ 2, 2, 2, 2 ]
+    NUM_HEADS: [ 2, 4, 6, 8 ]
+    WINDOW_SIZES: [ 7, 7, 14, 7 ]
+    EMBED_DIMS: [64, 96, 192, 224]

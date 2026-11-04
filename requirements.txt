@@ -1,0 +1,14 @@
+# Direct dependencies pinned to the local evaluation environment (Python 3.12).
+# Observed CUDA builds: torch 2.13.0+cu130, torchvision 0.28.0+cu130.
+# Install matching PyTorch/torchvision builds for the target CUDA environment.
+torch==2.13.0
+torchvision==0.28.0
+timm==1.0.15
+numpy==2.5.1
+Pillow==12.3.0
+PyYAML==6.0.3
+yacs==0.1.8
+termcolor==3.3.0
+fvcore==0.1.5.post20221221
+# Used only when --use-wandb is enabled.
+wandb==0.28.1
